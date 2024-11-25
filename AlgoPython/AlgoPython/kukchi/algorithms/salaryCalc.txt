@@ -1,0 +1,61 @@
+Algorithme 	Salaire
+Variables 
+		catg: charactere
+		salaireBase, salaireNet, totalPrime: reel
+		situation, reponse: chaine
+		enfant: entier
+
+Debut
+totalPrime <- 0
+
+ecrire("Entrez votre salaire: ")
+lire(salaireBase)
+ecrire("Entrez votre categorie: ")
+lire(catg)
+
+si catg = 'a' ou catg = 'A' ou catg = 'b' ou catg = 'B' ou catg = 'c' ou catg = 'C' Alors
+
+		si catg = 'a' ou catg = 'A' Alors
+			totalPrime <- totalPrime + 200
+
+		sinon
+			si catg = 'b' ou catg = 'B' Alors
+				totalPrime <- totalPrime + 500
+			
+			sinon
+				si catg = 'c' ou catg = 'C' Alors
+					totalPrime <- totalPrime + 700
+		FinSi		
+
+sinon
+	ecrire("entrez une valide catégorie!")
+FinSi
+
+
+ecrire("Entrez votre Situation familiale: ")
+lire(situation)
+
+si situation = "célibataire" ou situation = "Célibataire" alors
+	ecrire("Votre salaire net est ", salaireBase + totalPrime)
+sinon
+	ecrire("Est ce que tu a des enfants? (Oui/Non)")
+	lire(reponse)
+	si reponse = "OUI" ou reponse = "Oui" ou reponse = "oui" Alors
+		ecrire("Combien des enfants? ")
+		lire(enfant)
+		si enfant = 1 Alors
+			totalPrime <- totalPrime + 300
+		sinon
+			si enfant = 2 Alors
+			totalPrime <- totalPrime + 600
+			sinon
+				si enfant > 2 Alors
+				totalPrime <- totalPrime + 1000
+			FinSi
+		FinSi
+	Sinon
+		ecrire("Votre salaire net est ", salaireBase + totalPrime)
+
+	ecrire("Votre salaire net est ", salaireBase + totalPrime)
+
+

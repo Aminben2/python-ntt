@@ -1,0 +1,377 @@
+CC1 101
+EXERCICE1:
+Algorithme produit-carré
+Variables
+A,B,P : entier
+Debut
+Repeter
+	Ecrire("Entrez la valeur de A :")
+	Lire(A)
+jusqua A>=0
+P<-1
+Repeter
+	Ecrire("Entrez la valeur de B supérieure à A :")
+	Lire(B)
+jusqua A<B
+Pour i allant de A à B
+	P=P*(i**2)
+	Ecrire(i,"^2x")
+FinPour
+Ecrire("S=",P)
+Fin
+# EXERCICE 2 :
+Algorithme nombres-paires
+Variables
+A,B : entier
+Debut
+Repeter 
+	Ecrire("Entrez la valeur de A :")
+	Lire(A)
+jusqua A>=0
+Repeter
+	Ecrire("Entrez la valeur de B supérieur eà A :")
+	Lire(B)
+jusqua A<B
+Ecrire("Les nombres paires entres", A, "et", B, "sont")
+Pour i allant de A à B
+	Si i%2=0 alors
+		Ecrire(i,",")
+	Finsi
+FinPour
+Fin
+# EXERCICE 4:
+Algorithme 
+S : reel
+An, Ar,age,Ae : entier
+Debut
+Ecrire("Entrez votre salaire :")
+Lire(S)
+Si S<500 alors
+	Ecrire("Votre salaire est incorrect ")
+Sinon
+	Ecrire("Entrez votre année de naissance :")
+	Lire(An)
+	Si An<1900 OU An>2023 alors
+		Ecrire("Votre année de naissance est invalide")	
+	Sinon
+		Ecrire("Entrez votre année de recrutement :")
+		Lire(Ar)
+		Si Ar<An OU Ar>2023 alors
+			Ecrire("Votre année de recrutement est invalide")
+		Finsi
+	Finsi
+Finsi
+Age<-2023-An
+exp<-2023-Ar
+Si Age<40 ET exp>=10 alors
+	Ecrire("le salaire est",S,", année de naissance",An,"et de recrutement",Ar,"alors la retraite est",S-0.2*S,"DH")
+Sinon
+	Si (Age>=40 OU Age<>=55) ET exp>=15 alors
+		Ecrire("le salaire est",S,", année de naissance",An,"et de recrutement",Ar,"alors la retraite est",S-0.1*S,"DH")
+	Sinon
+		Si>55 ET exp>=25 alors
+			Ecrire("le salaire est",S,", année de naissance",An,"et de recrutement",Ar,"alors la retraite est",S,"DH")
+		Sinon
+			Ecrire("Vous etes pas de retraite")
+		Finsi
+	Finsi
+Finsi
+Fin
+######################## CC1 102 ###################################################
+#EXERCICE 2:
+Algorithme calcule nombre d'existence
+Variables
+num, nbp, P : entier
+Debut
+Repeter
+	Ecrire("Donner un nombre NUM entre 1 et 8 :")
+	Lire(num)
+jusqua num>=1 ET num<=8
+Si num<1 ET num>8 alors
+	Ecrire("Le nombre",num,"est invalide")
+Sinon
+	P<-0
+	Repeter
+		Ecrire("Donner une suite de nombre, pour arreter taper un nombre négatif :")
+		Lire(nbp)
+		Si nbp=num alors
+			P<-P+1
+		Finsi
+	jusqua nbp<0
+	Ecrire("Le nombre de répétition de la valeur", num, "est :", P)
+Finsi
+Fin
+# EXERCICE 3:
+Algorithme nombre-abandant
+Variables
+Na , S : reel
+Repeter 
+	Ecrire("Entrez un nombre réel :")		
+jusqua Na>0
+S=0
+Pour i allant de 1 à Na-1 alors
+	Si Na%i=0 alors
+		S=S+1
+	Finsi
+FinPour
+Si S>Na alors
+	Ecrire("Le nombre", Na, "est abondant")
+Sinon
+	Ecrire("Le nombre" Na "n'est pas abondant")
+Finsi
+Fin
+#EXERCICE 4:
+Algorithme calcul-montant
+Variables
+prxu, c, q : entier
+Debut
+Ecrire("Entrez le prix unitaire :")
+Lire(prxu)
+Si prxu<=0 alors
+	Ecrire("Le prix est invalide")
+Sinon
+	Ecrire("Entrez la quantiteé achetée :")
+	Lire(q)
+	Si q<=0 alors
+		Ecrire("Quantitée invalide")
+	Sinon
+		Ecrire("Entrez la catégorie du produit :")
+		Lire(c)
+	Si c<1 alors
+		Ecrire("Le montant de la taxe est",prxu*0.06, "et le prix à payer pour un produit est ",(prxu+(prxu*0.06)*q)
+	Sinon
+		Si c>=1 ET c<=3 alors
+			Ecrire("Le montant de la taxe est",prxu*0.09, "et le prix à payer pour un produit est ",(prxu+(prxu*0.09)*q)
+		Sinon 
+			Si c>=4 ET c<=7 alors
+				Ecrire("Le montant de la taxe est",prxu*0.15, "et le prix à payer pour un produit est ",(prxu+(prxu*0.15)*q)
+			Sinon
+				Ecrire("Le montant de la taxe est",prxu*0.2, "et le prix à payer pour un produit est ",(prxu+(prxu*0.2)*q)
+			Finsi
+		Finsi
+	Finsi
+Finsi
+Fin
+ 			#################################" CC1 103 #####################################
+# EXERCICE 1:
+Algorithme triplet-amiables
+Variables
+A, B, C, Sa, Sb, Sc : reel
+Debut
+Repeter
+	Ecrire("Entrez la valeur de A :")
+	Lire(A)
+	Ecrire("Entrez la valeur de B :")
+	Lire(B)
+	Ecrire("Entrez la valeur de C :")
+	Lire(C)
+jusqua A>0 and B>0 and C>0
+Sa<-0
+Sb<-0
+Sc<-0
+Pour i allant de 1 à A-1 alors
+	Si A%i=0 alors
+		Sa=Sa+i
+	Finsi
+FinPour
+Pour i allant de 1 à B-1 alors
+	Si B%i=0 alors
+		Sb=Sb+i
+	Finsi
+FinPour
+Pour i allant de 1 à C-1 alors
+	Si C%i=0 alors
+		Sc=Sc+i
+	Finsi
+FinPour
+Si (Sa = Sb+Sc) OU (Sb=Sc+Sa) OU (Sc=Sb+Sa) alors
+	Ecrire("Le triplet de", A, B, C, "est ambiale.")
+Sinon
+	Ecrire("Le triplet de", A, B, C, "n'est pas ambiale.")
+# EXERCICE 3 :
+Algorithme MENU
+Variables
+nom, filière, dp : chaine
+An, choix, code : entier
+D : boolhéan
+nt : reel
+Debut
+Ecrire("------------------------MENU------------------")
+Ecrire("------------------1. S'inscrire---------------")
+Ecrire("------2. Voir votre demande d'nscription------")
+Ecrire("Tapez votre choix")
+Lire(choix)
+Si choix=1 alors
+	Ecrire("Entrez votre nom")
+	Lire(nom)
+	Ecrire("Entrez votre année de naissance")
+	Lire(An)
+	Si An<=0 alors
+		Ecrire("Age invalide")
+	Sinon 
+		age<-2023-An
+		Si age>30 alors
+			Ecrire("Vous etes un diplome (oui ou non) ?")
+			Lire(D)
+			Si D=Vrai alors
+				Ecrire("Quel est ton diplome : TS-TP")
+				Lire(dp)
+				Si dp="Ts" alors
+					Ecrire("Votre code est INST")
+				Sinon
+					Ecrire("Votre code est INSL")
+				Finsi
+			Sinon 
+				Ecrire("Votre inscription est invalide")
+			Finsi
+		Sinon
+			Si age>=18 ET age<=30 alors
+				Ecrire("Entrez la moyenne du bac :")
+				Lire(nt)
+				Si nt>13 alors
+					Ecrire("Entrez votre filière du bac(S=sentifique et L=lettre) :")
+					Lire(filière)
+					Ecrire("Entrez votre filière que vous aimes étudier(TRI ou TDI) :")
+					Lire(dp)
+					Si (dp="TDI" OU dp="TRI") ET (filière="S" OU filière="s") alors
+						Ecrire("Votre code est INSV")
+					Sinon
+						Ecrire("Inscription invalide")
+					Finsi
+				Sinon
+					Ecrire("Inscription invalide")
+				Finsi
+			Finsi
+		Finsi
+	Finsi
+Sinon
+	Ecrire("Est ce que vous voulez voir votre demande d'inscription :")
+	Lire(D)
+	Si D=Vrai alors
+		Ecrire("Entrez votre code :")
+		Lire(code)
+		Si code="INST OU code="INSL" OU code="INSV" alors
+			Ecrire("félicitation vous êtes admis dans les filières TRI ou TDI")
+		Sinon
+			Ecrire("Code invalide")
+		Finsi
+	Sinon
+		Ecrire("Malheureusement vous n’êtes pas admis")
+	Finsi
+Finsi
+Fin
+
+
+
+
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

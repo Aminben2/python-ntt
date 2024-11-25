@@ -1,0 +1,291 @@
+#EXERCICE 5: tantque
+Algorithme max
+Variables
+nb1, nb2, max : reel
+Debut
+Ecrire("Entrez un nombre 1 :")
+Lire(nb)
+max <- nb1
+p<-1
+Tantque nb1<>0 alors
+	Ecrire("Entrez le nombre suivant:")
+	Lire(nb2)
+	Si nb2>max alors
+		max<-nb2
+		p<-p+1
+	Finsi
+Fintantque
+Ecrire("le max est:", +max, "et son potision est:", +p)
+Fin
+#METHODE 2 : jusqu'a
+Algorithme max
+Variables
+nb, max : reel
+c,p : entier
+Debut
+c<-1
+max<-65
+Repeter 
+	Ecrire("Entrez le nombre numéro:",i)
+	Lire(nb)
+	Si nb<>max ET (c=1 OU nb>=max) alors
+		max<-nb
+		p<-c
+	Finsi
+	c<-c+1
+jusqu'a nb=0
+Ecrire("le max est:", max, "et son potision est:", p)
+Fin
+#EXERCICE 6 :
+Algorithme moyenne
+Variables 
+nb1, nb2, somme, total : reel
+sortir : chaine
+Debut
+Ecrire("Entrez un nombre:")
+Lire(nb1)
+somme<-1
+total=nb1
+Tantque nb1 <> 0 alors
+	Ecrire("Entrez le nombre suivant:")
+	Lire(nb2)
+	somme<-somme+1
+	total<-total+nb2
+	Si sortir=0 alors
+		QUITTER LA BOUCLE
+	Sinon
+		CONTINUE
+	Finsi
+Fintanque
+Ecrire("la moyenne est", total/somme)
+Fin
+#METHODE 2 EXERCICE 6 :
+Algorithme moyenne
+Variables 
+nb,S : reel
+c : entier
+Debut
+S<-0
+c<-1
+Repeter
+	Ecrire("Entrez un nombre:")
+	Lire(nb2)
+	Si nb<>0 alors
+		S<-S+nb
+	Finsi
+	c<-c+1
+Jusqu'a nb=0
+Ecrire("la moyenne est", S/(c-1))
+Fin
+#EXERCICE 1:
+Algorithme somme
+Variables
+x,s : reel
+n,i : entier
+Debut
+Ecrire("Entrez la valeur de x:")
+Lire(x)
+Repeter
+	Ecrire("Entrez la valeur de n:")
+	Lire(n)
+jusqu'a n>0
+Pour i allant de 1 à n
+	s<-s+x^1
+Finpour
+Ecrire("La somme est:", s)
+Fin
+#EXERCICE 2 MOT DE PASSE :
+Algorithme mdp
+Variables 
+mdp, q : chaine 
+Ecrire("Entrez votre mot de passe")
+Si mdp="Bonjour" alors
+	Ecrire("Succès de l'authentification")
+Sinon
+Finsi 
+	Pour i allant de 0 à 2
+		Ecrire("Entrez le mot de passe correcte:")
+		Si mdp="Bonjour" alors
+			Ecrire("Succès de l'authentification")
+			Quitter de la boucle
+	Finpour
+	Sinon
+		Ecrire("Votre compte est bloqué")
+		Ecrire("Entrez le mot secrète:")
+		Lire(q)
+	Finsi
+		Si q="Minou" alors
+			Ecrire("Succès de l'authentification")
+		Sinon
+			Ecrire("Votre demande a été refusée")
+		Finsi
+Fin
+#EXERCICE 3:
+Algorithme date
+Variables 
+min,sec : entier
+Debut
+Repeter
+	Ecrire("Entrez un horaire min et sec :")
+	Lire(min,sec)
+jusqua min>=0 ET min<60 ET sec>=0 ET sec<60
+Repeter
+	Si sec<>0 alors
+		sec<-sec-1
+	Sinon
+		sec<-59
+		min<-min-1
+	Finsi
+	Ecrire("min,":",sec)
+jusqua min=0 ET sec=0
+Ecrire("ARRET")
+Fin
+#EXERCICE 4 : game nmbre masqué
+Algorithme game
+Variables 
+nb, nc : entier
+Ecrire("Entrez un nombre :")
+nc<-50
+Tantque nb<>nc alors
+	Si nb > nc alors
+		Ecrire("C'est plus, entrez un nombre correct :")
+		Lire(nb)
+	Sinon
+		Ecrire("C'est moins, entrez un nombre correct :")
+		Lire(nb)
+	Finsi
+Fintantque
+Ecrire("Félicitations ! Le nombre", nb, "est correct.")
+Fin
+#######################  METHODE 2  ######################"
+Algorithme game
+Variables 
+nb, nc : entier
+Ecrire("Entrez un nombre :")
+nc<-50
+Repeter 
+	Si nb > nc alors
+		Ecrire("C'est plus, entrez un nombre correct :")
+		Lire(nb)
+	Sinon
+		Ecrire("C'est moins, entrez un nombre correct :")
+		Lire(nb)
+	Finsi
+Jusqu'a nb=nc
+Ecrire("Félicitations ! Le nombre", nb, "est correct.")
+Fin
+#EXERCICE 5 :
+Algorithme recherche
+Variables
+nb1,nb2,f : entier
+Ecrire("Entrez la valeur à rechercher :")
+Lire(nb1)
+Pour i allant de 1 à 11
+	Ecrire("Entrez le nombre numéro", i, ":")
+	Lire(nb2)
+	Si nb2=nb1 alors
+		f=f+1
+	Finsi
+Finpour
+Ecrire("La valeur à rechercher apparait", f, "fois")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

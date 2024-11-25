@@ -1,0 +1,184 @@
+ALGORITHME NOMBRES PREMIERS:
+Variables
+i,nb,nbdiv : entier
+Debut
+Ecrire("Entrez un nombre")
+Lire(nb)
+Repeter 
+	Ecrire("Entrez un nombre :")
+	Lire(nb)
+jusqua nb>=0
+Si nb=0 OU nb=1 alors
+	Ecrire(nb, "Est non premier")
+Sinon 
+	Si nb=2 alors
+		Ecrire(nb,"est premier")
+	Sinon
+		nbdiv<-0
+		Pour i allant de 2 à nb-1
+			Si nb%i =0 alors
+				nbdiv<-nbdiv+1
+			Finsi
+		FinPour
+		Si nbdiv=0 alors
+			Ecrire(nb,"est premier")
+		Sinon
+			Ecrire(nb,"est non premier")
+		Finsi
+	Finsi
+Finsi
+Fin
+########################"
+EXERCICE 2 : NB PARFAIT
+Algorithme 
+Variables
+i,nb,s:entier
+Debut
+Repeter
+	Ecrire("Entrez le nombre")
+	Lire(nb)
+jusqua nb>=0
+Si nb=0 OU nb=1 alors 
+	Ecrire(nb,"n'estpas parfait")
+Sinon
+	s<-0
+	Pour i allant de 1 à nb-1
+		Si nb%i=0 alors
+			s<-s+1
+		Finsi
+	FinPour
+	Si s=nb alors
+		Ecrire(nb,"est parfait")
+	Sinon
+		Ecrire(nb,"n'est pas parfait")
+	Finsi
+Finsi
+Fin
+# EXERCICE 3
+Algorithme suite syracuse
+Variables nb,c : entier
+Ecrire("Entrez un nombre :")
+Lire(nb)
+c<-0
+Repetre 
+	Si nb%2=0 alors
+		nb<-nb/2
+		Ecrire("U",c,"=",nb)
+	Sinon
+		nb<-nb*3+1
+		Ecrire("U",c,"=",nb)
+	Finsi
+	c<-c+
+jusqua nb=1
+Si nb= 1 ET c=0 alors
+	Ecrire("U0=1")
+Finsi
+Fin
+# EXERCICE 6:
+Algorithme MENU
+Variables
+a,b,i,P,choix : entier
+a-b-rempli : booleen
+Debut
+a-b-rempli<-FAUX
+Repeter 
+	Ecrire("-----------MENU--------")
+	Ecrire("1. Entrez a, b")
+	Ecrire("2. Afficher produit des nombres entre a et b")
+	Ecrire("3. Quitter")
+	Ecrire("Tapez votre choix :")
+	Lire(choix)
+	selon choix
+		cas1 : Ecrire("Entrez a :")
+		       Lire(a)
+		       Repeter
+				Ecrire("Entrez b :")
+				Lire(b)
+		       jusqua b>a
+		       a-b-rempli<VRAI
+		cas2 : Si a-b-rempli = VRAI alors
+				P<-1
+				Pour i allant de a+1 à b-1
+					P<P*i
+				FinPour
+				Ecrire("Le produit est :", P)
+			Sinon
+				Ecrire("il faut entrer a et b choisissez 1")
+			Finsi
+		cas3:   Ecrire("MERCI FIN PROGRAMME")
+		autrement : Ecrire("choix invalide")
+jusqua choix 3
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

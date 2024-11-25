@@ -1,0 +1,48 @@
+Algorithme Prime
+Variables
+	Salaire, NE : réel
+	SF, Cat, Enfant : chaine de caractere
+Debut 
+	Ecrire("Entrez votre salaire: ")
+	Lire(Salaire)
+	Ecrire("Entrez votre categorie: ")
+	Lire("Cat")
+	Si cat = "b" ou cat = "B" Alors
+		totalPrime = 200
+	Sinon
+		Si cat = "b" ou cat = "B" Alors
+			totalPrime = 500
+		Sinon 
+			Si cat = "c" ou cat = "C" Alors
+				totalPrime = 700
+			Sinon
+				Ecrire("Entrez une categorie Valide")
+			FinSi
+		FinSi
+	FinSi
+	
+	Ecrire("Entrez votre situation familiale")
+	Lire("SF")
+	Si SF = "célibataire" ou SF ="Célibataire" Alors
+		Ecrire("Votre salaire net est", salaireBase + totalPrime)
+	Sinon
+		Ecrire("est ce que vous avez des enfant?")
+		Lire("Enfant")
+		Si Enfant = "OUI" ou Enfant = "Oui" ou Enfant = "oui"
+			Ecrire("Combien des enfant vous avez?")
+			Lire("Enfant")
+			Si NE = 1 Alors
+				totalPrime = totalPrime + 300
+			Sinon
+				Si NE = 2 Alors
+					totalPrime = totalPrime + 600
+				Sinon
+					Si NE > 2 Alors
+						totalPrime = totalPrime + 1000
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	Ecrire("Votre salaire net est: ", salaireBase + totalPrime)
+Fin

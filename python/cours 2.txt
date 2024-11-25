@@ -1,0 +1,130 @@
+CHAPITRE 5 : LES BOUCLES
+EXEMPLE : Algorithme
+Variables
+a,b,c : reel
+choix: entier
+Ecrire("Entrez trois nombre")
+Lire(a,b,c)
+Ecrire("..................Menu.............")
+Ecrire("1.................Moyenne..........")
+Ecrire("2.................Minimum..........")
+Ecrire("3.................Maximum..........")
+Ecrire("4.................Sortir...........")
+Ecrire("tapezvotre choix")
+Lire(choix)
+Selon choix
+	cas 1: Ecrire("la moyenne est:", (a+b+c)/3)
+	cas 2: Si a<=b ET a<=b alors
+			Ecrire("a est le minimum")
+	       Sinon
+	       		Si b<=a ET b<=c alors
+				Ecrire("b est le minimum")
+			Sinon
+				Ecrire("c est le minimum")
+			Finsi
+	       Finsi
+	cas 3: Si a>=b ET a>=b alors
+			Ecrire("a est le minimum")
+	       Sinon
+	       		Si b>=a ET b>=c alors
+				Ecrire("b est le minimum")
+			Sinon
+				Ecrire("c est le minimum")
+			Finsi
+	       Finsi
+	autrement : Ecrire ("choix invalide")
+Fin
+#########################################################
+LES BOUCLES c'est un traitement qui se répéte : 
+-Pour un nombre connu de fois : *la boucle Pour* (valeur initiale/valeur finale) f python (for)
+-Pour un npmbre inconnu de fois : la boucle *Tant que*/ *Repeter.....jusqu'a* (condition ) f python (while)
+#LA BOUCLE POUR : 
+dans le cas du pas positif : vi<=vf
+dans le cas du pas négatif : vi>=vf
+Pour (i) allant de (valeur initiale) a (valeur finale) pas 1
+	#Traitement
+	#ligne 1
+	#ligne 2
+	#ligne 3
+FinPour
+nombre de fois : vf-vi + pas
+Deroulement
+Etape1 : Initialise le compteur : i<-vi
+Etape2 : Tester i<=vf
+	=> Vrai => Etape 3 : Executer le traitement ligne par ligne 
+	=> Faux =>  Sortir de la boucle
+Etape 4 : Incrementer le compteur : i<- i+pas => Refaire Etape2
+
+###########################################################################
+#EXEMPLE DE BOUCLE POUR :
+Algorithme de test
+Variables
+i : entier
+Debut
+Pour i allant de 0 a 4 pas 1 
+	Ecrire("Bonjour tout le monde")
+FinPour
+Fin
+#EXEMPLE 2:
+Algorithme 
+Variables
+i : entier 
+nb : reel
+Debut
+Pour i allant 1 a 25
+	Ecrire("Entrez le nombre numero:", i)
+	Lire(nb)
+	Ecrire("le nombre",i, "est:",nb)
+FinPour
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

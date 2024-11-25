@@ -1,0 +1,15 @@
+algorithme maj_min
+variables
+		char: character
+Debut
+ecrire("Entrer une lettre: ")
+lire(char)
+si code(char) >= code('A') et code(char) <= code('Z') Alors
+	ecrire("La lettre saisie est Majuscule")
+sinon
+	si code(char) >= code('a') et code(char) <= code('z') Alors
+		ecrire("La lettre saisie est Minuscule")
+	sinon
+		ecrire("Invalide")
+	FinSi
+FinSi

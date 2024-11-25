@@ -1,0 +1,31 @@
+Algorithme Année
+Variables j,m,a,J,M,A: caractére
+Debut
+	Ecrire("Entrer le premier date: ")
+	Ecrire("Enter le jour: ")
+	Lire(j)
+	Ecrire("Entrer le mois: ")
+	Lire(m)
+	Ecrire("Entrer l'année: ")
+	Lire(a)
+	Ecrire("Entrer le premier date: ")
+	Ecrire("Enter le jour: ")
+	Lire(J)
+	Ecrire("Entrer le mois: ")
+	Lire(M)
+	Ecrire("Entrer l'année: ")
+	Lire(A)
+	Si (j<=0 ou j>31) ou (J<=0 ou J>31) ou (m<=0 ou m>12) ou (M<=0 ou M>12) Alors
+		Ecrire("La date invalide")
+	Sinon
+		Si a>A ou (a=A et m>M) ou  (a=A et m=M et j>J) Alors
+			Ecrire("Le premier date est plus grand")
+		Sinon
+			Si a=A et j=J et a=A Alors
+				Ecrire("Le premier date egale le deuxieme date")
+			Sinon
+				Ecrire("Le deuxieme date est plus grand")
+			FinSI
+		FinSi
+	FinSi
+Fin

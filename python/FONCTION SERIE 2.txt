@@ -1,0 +1,20 @@
+SERIE 2 :
+#EXERCICE 2 :
+Algorithme date
+Variables
+j,m,a : entier
+	Fonction date_valide (j,m,a : entier) : booléenne
+	Debut
+	Si j<1 OU m<1 OU m>12 OU a<1 OU (j>28 ET m=2) OU (j>30 ET (m=4 OU m=6 OU m=9 OU m=11)) alors
+		retourne FAUX
+	Sinon 
+		retourne VRAI
+	Finsi
+	FinFonction
+Debut
+Ecrire("Entrez une date :")
+Lire(j,m,a)
+Si date_valide = VRAI alors
+	Ecrire("La date est valide")
+Sinon
+	Ecrire("La date est invalide")

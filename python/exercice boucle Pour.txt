@@ -1,0 +1,152 @@
+#EXERCICE 1:
+Algorithme de multiplication
+Variables
+i : entier
+nb : entier
+Debut
+Ecrire("Entrez le nombre:")
+Lire(nb)
+Ecrire("Table de",nb,":")
+Pour i allant 1 a 10 
+	Ecrire(nb,"x",i,"=", nb*i)
+FinPour
+Fin
+#EXERCICE 2:
+Algorithme de somme accumulative
+Variables
+nb , i , s : entier
+Debut
+Ecrire("Entrez le nombre de départ:")
+Lire(nb)
+s<- 0
+Pour i allant de 1 a nb
+	s<-s+i
+FinPour
+Ecrire(la somme est:", s)
+Fin
+
+#EXERCICE 3:
+Algorithme de factorielle
+Variables
+nb , i , f : entier
+Debut
+Ecrire("Entrez le nombre de départ:")
+Lire(nb)
+Si nb<0 alors
+	Ecrire("on ne peut pas calculer le factoriel")
+Sinon
+	Si nb=0 alors
+		Ecrire("le factoriel de 0 est: 1")
+	Sinon
+		f<-1
+		Pour i allant de 1 a nb
+			f<-f*i
+		FinPour
+		Ecrire(la factorielle est:",f)
+	Finsi
+Finsi
+Fin
+#EXERCICE 4:
+Algorithme max
+Variables 
+i,p: entier
+max,nb : reel
+Debut
+Ecrire("Entrez le premier nombre")
+Lire(nb)
+max<-nb
+p<-1
+Pour i allant de 2 a 10 
+	Ecrire("Entrez le nombre:", i)
+	Lire(nb)
+	Si nb>=max alors
+		nb<-max
+		p<-i
+	Finsi
+FinPour
+Ecrire("le maximum est:", max, "et le position est:", p)
+Fin
+##########################################################################################
+METHODE 2 EX 4 :
+Algorithme max
+Variables 
+i,p: entier
+max,nb : reel
+Debut
+Pour i allant de 1 a 10
+	Ecrire("Entrez le nombre:", i)
+	Lire(nb)
+	Si i=1 alors
+		m<-nb
+		p<-i
+	Sinon
+		Si nb>=m alors
+			m<-nb
+			p<-i
+		Finsi
+	Finsi
+FinPour
+Ecrire("Le nombre maximale est", m , "sa position est", p)
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

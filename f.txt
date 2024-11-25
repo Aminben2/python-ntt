@@ -1,0 +1,60 @@
+Let's analyze the time complexity (Big O) of both functions individually.
+1. Function: Exercice_1
+
+python
+
+def Exercice_1(lst):
+    return {i: lst.count(i) for i in set(lst)}
+
+Breakdown of operations:
+
+    set(lst) creates a set of unique elements from the list, which takes O(n) time, where n is the length of the list.
+    The dictionary comprehension {i: lst.count(i) for i in set(lst)} iterates over all unique elements in the set (let's call the number of unique elements k).
+        For each element i, the lst.count(i) method counts the occurrences of i in the list, which takes O(n) time for each element i.
+
+Time complexity:
+
+    Creating the set takes O(n).
+    The dictionary comprehension iterates k times, and for each iteration, the count method takes O(n).
+
+Thus, the overall time complexity is O(k * n), where k is the number of unique elements in the list, and n is the total length of the list.
+
+In the worst case, when all elements are unique (k = n), the time complexity is O(n²).
+2. Function: count_words
+
+python
+
+def count_words(s):
+    words_count = {}
+    all_words = s.split(" ")
+    for i in all_words:
+        if i in words_count:
+            words_count[i] = words_count[i] + 1
+        else:
+            words_count[i] = 1
+    return words_count
+
+Breakdown of operations:
+
+    s.split(" ") splits the string into words, which takes O(m) time, where m is the length of the string s.
+    The loop for i in all_words iterates over each word. Let's say there are n words.
+        Checking if i in words_count is an average O(1) operation since words_count is a dictionary, which has an average constant-time lookup.
+        Updating the dictionary (words_count[i] = words_count[i] + 1 or words_count[i] = 1) also takes O(1) on average.
+
+Time complexity:
+
+    Splitting the string takes O(m).
+    The loop runs n times, with each iteration having an average constant-time operation.
+
+Therefore, the overall time complexity is O(m + n), but since n (the number of words) is proportional to m (the length of the string), the time complexity simplifies to O(m).
+Summary:
+
+    Exercice_1 has a time complexity of O(n²) in the worst case (when all elements are unique).
+    count_words has a time complexity of O(m), where m is the length of the string s.
+
+You said:
+Improve time complexity?
+ChatGPT said:
+ChatGPT
+
+To improve the time complexity of both functions, we need to focus on optimizing operations that currently take linear or quadratic time. Here are the improvements for both functions:

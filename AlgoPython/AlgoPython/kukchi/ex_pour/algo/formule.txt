@@ -1,0 +1,13 @@
+Algorithme SigmaXi
+Variable: 
+		x, sigma: reel
+		i, n: entier
+Debut
+ecrire("entrer le nombre d'iteration")
+lire(n)
+ecrire("entrer la valeur de X")
+lire(x)
+sigma <- 0
+pour i allant de 1 à n
+	sigma <- sigma + (x)^i
+ecrire("la somme est ", sigma)

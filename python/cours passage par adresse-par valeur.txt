@@ -1,0 +1,33 @@
+Algorithme permutation
+Variables x,y : reel
+Procédure permutation(a,b : reel par adresse)
+	Variables c:reel
+	Debut
+	c<-a
+	a<-b
+	b<-c
+FinPrecédure
+Debut
+Ecrire("Entrez deux nombres :")
+Lire(x,y)
+Ecrire("Avant la procédure :" x,y)
+permutation(x,y)
+Ecrire("Après la procédure :", x,y)
+Fin
+########################"
+Adresse se compose par le nom(X) de variable et la valeur(34) du variable.
+On utilise le passage par adresse pour modifier ou changer les paramètres  sur la fonction.
+règle : 
+	Il faut utiliser le passage par adresse lorsue éffectuer un changement des valeurs des paramètres (affectation).
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+###ALGORITHME-EXERCICE 1
+variables 
+a : chaine
+debut
+ecrire("entrez l'annee:")
+lire(a)
+si (a%4=0 ET a%100<>0)12:15 16/10/2023 OU a%400=0 alors
+	ecrire("l'annee estbissextile")
+sinon
+	si
+		ecrire("l'annee est non bissextile")
+	sinon
+		ecrire("l'annee invalide")
+	finsi
+finsi
+fin
+
+###ALGORITHME-EXERCICE 2
+variables
+sf, : chaine
+sal : reel
+enf : entier
+ecrire("entrez votre salaire de base")
+lire(emp)
+Si sb<500 alors 
+	ecrire("salaire de base invalide")
+sinon 
+	Si sb>12000 alors
+		ecrire("le salaire net sans prime est:", sb)
+	Sinon
+		Ecrire("
+		
+lire(sf)
+si sf="m" ou sf="M" alors
+	ecrire("le salaire netest:", sb+(sb*0.1)")
+sinon 
+     si emp="m" ET sal<12000 alors
+	ecrire("votre salaire est:", sal+0,2)
+     sinon
+	  si emp=="c" and sal<12000 alors
+		ecrire("votre salaire est:", sal+0,1)
+	  sinon
+	       si emp==de OU emp==ve alors
+	   		ecrire("votre salaire est:", sal+0,3)
+	       sinon
+	  	    si emp==dp OU emp==vp alors
+	  			ecrire("votre salaire est:", sal+0,1)
+	     	    sinon
+	        			ecrire("votre salaire est invalide")
+	       	    finsi
+	       finsi
+          finsi   
+     finsi
+finsi
+fin
+##########################################################
+#Exercice 3:
+Algorithme salaire apres la retraite
+Variables 
+s : reel
+ar, an, age, exp : entier
+Ecrire("Entrez votre salaire actuel :")
+Lire(s)
+Ecrire("Entrez annee de naissance:")
+Lire(an)
+Ecrire("Entrez votre annee de recrutement:")
+Lire(ar)
+Si s<500 OU an<1900 OU ar<=an+18 ar<=an an>2023 OU ar>2023 alors
+	Ecrire("donnee invalide")
+Sinon
+	age <- 2023-an
+	exp <- 2023-ar
+	Si age<40 ET exp>=10 alors
+		Ecrire("le salaire apres la retraite est:", s-s*0.2)
+	Sinon
+		Si age>=40 ET age<=55 ET exp>=15 alors
+			Ecrire("le salaire apres la retraite est:", s-s*0.1)
+		Sinon
+			Si age>55 ET exp>=25 alors
+				Ecrire("vous devez avoir plus de 10ans d'expérience")
+			Sinon
+				Ecrire("le salaire apres la retraite est:", s)
+			Finsi
+		Finsi
+	Finsi
+Finsi
+Fin
+#####################################################################################################
+EXERCICE 4 :
+
+
+calcu impot 
+variables
+s : reel
+genre : chaine
+age : entier
+Ecrir(Entrez le slaire:,")
+Lire(s)
+Si s<=500 alors
+	Ecrire("Le salaire est invalide")
+Sinon
+	Ecrire("Entrez l'age :")
+	Lire(age)
+	Si age<=18 alors
+		Ecrire("C'est un age invalide")
+	Sinon
+		Ecrire("Entrez votre sexe: H: homme / F : femme")
+		Lire(genre)
+		Si genre<>"H" ET genre<>"h" ET genre<>"F" ET genre<>"f" alors
+			Ecrire("sexe invalide")
+		Sinon
+			Si (genre="H" OU genre="h") ET age>=20 alors
+				Ecrire("l'impot est:", s*0.1)
+			Sinon
+				Si (genre="F" OU genre="f") ET age>=18 Et age<=35) alors
+					Ecrire("l'impot est:", s*0.07)
+				Sinon
+					Ecrire("pas d'impot a payer")
+				Finsi
+			Finsi
+		Finsi
+	Finsi
+Finsi
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+Algorithme Table de multiplication(5)
+Variables
+	nb, i: entier 
+
+Debut
+ecrire("Entrer le nombre de départ: ")
+lire(nb)
+
+pour i allant de 1 à 10 pas 1
+	ecrire(nb, " x ", i, "=", nb*i)
+FinPour
+Fin
+
+
+---------------------------------
+
+Algorithme sigma+
+Variables
+	nb, i, n: entier 
+
+Debut
+ecrire("Entrer le nombre de départ: ")
+lire(nb)
+n <- 0
+si nb <= 0 alors
+	ecrire('Nombre Invalide!')
+sinon
+	pour i allant de 1 à nb
+		bn <- n+i
+	FinPour
+	ecrire('La somme est ', n)
+FinSi
+Fin
+
+---------------------------------
+
+Algorithme facto+
+Variables
+	nb, i, n: entier 
+
+Debut
+ecrire("Entrer le nombre : ")
+lire(nb)
+n <- 1
+si nb < 0 alors
+	ecrire('Nombre Invalide!')
+sinon
+	si nb = 0 alors
+		print('La factorielle de 0 est 1')
+	sinon
+		pour i allant de 1 à nb
+			n <- n*i
+		FinPour
+		ecrire("La factorial de", nb, "est ", n)
+	finsi
+FinSi
+Fin
+
+0------------
+Algo max
+variable: grandn, position, i, nb: entier
+
+Debut
+ecrire("Entrer un nombre")
+lire(nb)
+
+grandn <- nb
+position <- 1
+
+pour i allant de 2 à 10
+    ecrire("Entrer un nombre")
+    lire(nb)
+    si nb > grandn:
+        grandn <- nb
+   		position <- i
+ 	finsi
+ finpour
+ Fin
+ecrire("le max est ", grandn, "le position est ", position)

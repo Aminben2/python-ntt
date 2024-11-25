@@ -1,0 +1,33 @@
+EXERCICE 5 : Suite Vn
+Fonction facto(nb : entier) : entier
+	variables (fact, i : entier)
+	Debut
+	Si nb=0 alors
+		retourne 1
+	Sinon
+		fact <- 1
+		Pour i allant de 1 à nb
+			fact <- fact*i
+		retourne fact
+		FinPour
+	FinSi
+FinFonction
+
+Fonction Suite_U(N : entier):entier
+	Debut
+	Si N=0 alors
+		retourne 1
+	Sinon
+		retourne Suite_U(N-1)*facto(N-1)
+	FinSi
+FinFonction
+
+Fonction Suite_V(N : entier):entier
+	Variables suite,i : entier
+	Debut
+	suite <- 0
+	Pour i allant de 1 à N
+		suite = suite + Suite_U(i)/(i**N)
+	retourne suite
+	FinPour
+FinFonction

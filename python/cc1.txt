@@ -1,0 +1,38 @@
+EXERCICE 4:
+Variables
+prx : reel
+Q: entier
+cat : chaine
+Ecrire("Entrez le prix unitaire")
+Lire(prx)
+Si prxu<=0 alors
+	Ecrire ("le prix est invalide")
+Sinon 
+	Ecrire("entrez la quantitée achetée")
+	Lire(Q)
+	Si Q<=0 alors
+		Ecrire("la quantité est invalide")
+	Sinon
+		Ecrire("Entrez la catégorie")
+		Lire(cat)
+		Si cat<0 alors
+			Ecrire("la catégorie est invalide")
+		Sinon
+			Si cat=0 ET cat=1 alors
+				print("le montant de la taxe est:", prxu*0.06, "et le prix a payer est:", (prxu+(prxu*0.06))*Q)
+			Sinon
+				Si cat>1 ET cat<=3 alors
+					Ecrire("le montant de la taxe est:", prxu*0.09, "et le prix a payer est:", (prxu+(prxu*0.09))*Q)
+				Sinon
+					Si cat>=4 ET cat<=7 alors
+						Ecrire("le montant de la taxe est:", prxu*0.15, "et le prix a payer est:", (prxu+(prxu*0.15))*Q)
+					Sinon
+						Ecrire("le montant de la taxe est:", prxu*0.2, "et le prix a payer est:", (prxu+(prxu*0.2))*Q)
+					Finsi
+				Finsi
+			Finsi
+		Finsi
+	Finsi
+Finsi
+Fin
+

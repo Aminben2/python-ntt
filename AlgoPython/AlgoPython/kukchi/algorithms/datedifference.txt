@@ -1,0 +1,28 @@
+Algorithme Date_comparison
+variable:
+		j,m,a: entier
+		jj,mm,aa: entier
+
+Debut
+Ecrire(“Entrez 1ere date(jj mm aaaa):”)
+lire(j, m, a)
+
+Ecrire(“Entrez 2eme date(jj mm aaaa):”)
+lire(jj, mm, aa)
+
+// validation des dates
+
+Si ((j < 1 OU j > 31) OU (m<1 OU m>12) OU (a < 0) OU (m == 2 ET j>28 ET not((a % 4 == 0 ET a % 100 != 0) OU (m == 2 ET j>29 ET (a % 4 == 0 ET a % 100 != 0)) OU (a % 400 == 0))) OU (m == 4 OU m == 6 OU m == 9 OU m == 11 ET j>30)) ET ((jj < 1 OU jj > 31) OU (mm<1 OU mm>12) OU (aa < 0) OU (mm == 2 ET jj>28 ET not((aa % 4 == 0 ET aa % 100 != 0) OU (mm == 2 ET jj>29 ET (aa % 4 == 0 ET aa % 100 != 0)) OU (aa % 400 == 0))) OU (mm == 4 OU mm == 6 OU mm == 9 OU mm == 11 ET jj>30))  alors
+    ecrire("Date invalide")
+
+sinon
+	si ((j = jj) ET (m = mm) ET (a = aa)) Alors
+		ecrire("les dates sont égaux")
+	sinon
+		si ((j = jj) ET (m = mm) ET (a = aa)) alors
+			ecrire("les dates sont égaux")
+		sinon
+			si aa > a OU ( aa = a ET mm > m) OU (aa = a ET mm = m ET jj > j) alors
+				ecrire("2eme date > 1ere date")
+			sinon
+				ecrire("1ere date > 2eme date")

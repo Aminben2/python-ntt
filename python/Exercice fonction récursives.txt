@@ -1,0 +1,27 @@
+Exerice 6:
+Algorithme Suite
+Variables 
+nb : entier
+Fonction suite(nb : entier) : entier
+	Variables p,résultat : entier
+	Debut
+	Si nb=1 alors
+		retourne 1
+	Sinon
+		Si nb=2 alors
+			retourne 2
+		Sinon
+			retourne suite(nb-1)*suite(nb-2)
+		FinSi
+	FinSi
+FinFonction
+Debut
+Ecrire("Entrez un nombre :")
+Lire(nb)
+p<-1
+Pour i allant de 1 à nb alors
+	Ecrire("U",i,"=",suite(i))
+	p=p*suite(i)
+Ecrire("L eproduit est :", p)
+Fin
+	

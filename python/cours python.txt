@@ -1,0 +1,84 @@
+Déclaration-Vriabbles
+#nom-variables = valeur
+exemple : a=9
+#affichage combiné -EXEMPLE
+nom = ahmadi
+prenom = ahmed
+age = 19
+adr = rue a
+print("mronsieur :",nom,prenom,"votre age est:",age,"votre adr est:",adr)
+OU ON UTILISE AUTRE FONCTION #print avec une chaine formatée (f)
+print(f"Monsieur: {nom} {prenom} votre age est: {age} votre adresse est: {adr}")
+OU ON UTILISE AUTRE FONCTION #format
+print("Monsieur: {} {} votre age est: {} votre adresse est: {}".format(nom,prenom,age,adr))
+#Fonction type : c'est une fonction qui prend un paramètre une seule variable/valeur et retourne le type de cette variable/valeur
+#EEMPLE
+ta = type(a)
+print("le type de variable ",a, "est :"; ta)
+#Les fonctions de conversion (convertir un type a un autre type)
+# int(hna kanketbo variable) : fonctiont qui convertit la variable en paramètre en un entier
+#La fonction input c'est la fonction de lire et stockage : retourne la saisie de l'utilisateur sous forme d'une chaine
+cette fonction prend en paramètre un seul arguent ou pas.. cette argument est le message qui sera affiché à l'utilisateur
+# var = input("message") OU var = float(input("message:"))OU var = int(input("message:"))
+#####################################################################################################################"""
+LES STRUCTURES DES TESTES:
+	UN SEUL CAS :
+if condition :
+	#traitement
+# opérateur de comparaison : == (pour tester l'égalité) / != (pour tester la différence) 
+# opérateur logique : and (ET) / or (OU) / not (NON)
+EXEMPLE :
+x = 9
+if x<=10
+	print("x inférieur a 10")#bloc conditionnel
+print("bye")#code bloc principale
+	DEUX CAS :
+if condion :
+	#trait1
+else:
+	#trait2
+EXEMPLE :
+y=23
+if y<=0
+	print("y est negatif ou egale a 0")
+else:
+	print("y est positif")
+print("bye")
+	# >= 3 cas :
+y = 34
+if y!=0 :
+  if y>0 :
+	print("y est positif")
+  else :
+	print("y est negatif")
+else :
+     print("y est egale a 0")
+### ON UTILISANT elif (else if)
+if y==0 :
+	print("y est egal a 0")
+elif y>0 :
+	print("y est positif")
+else :
+	print("y est negatif")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

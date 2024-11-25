@@ -1,0 +1,16 @@
+Algorithme Upper
+Variables car : caractére
+Debut 
+	Ecrire("Entrer le caractére:")
+	Lire("car")
+	Si code(car) >= 65 et code(car) <= 90 Alors-+
+		Ecrire("C'est majuscule")
+	Sinon
+		Si code(car) >= 97 et code(car) <= 122 Alors
+			Ecrire ("C'est minuscule")
+		Sinon 
+			Ecrire ("C'est un Symbole")
+		FinSi
+	FinSi
+Fin
+		

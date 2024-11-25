@@ -1,0 +1,125 @@
+EXERCICE 1 :
+Algorithme Suite
+Variables
+n, P, S1, S2, Sn = entier
+Debut
+Repeter 
+	Ecrire("Entrez la valeur de n :")
+	Lire(n)
+	Si n<=2 alors
+		Ecrire("Le nombre est invalide")
+	Finsi
+Jusqua n>2
+S1 = 1
+S2 = 2
+P = S1*S2
+Pour i allant de 1 à n+1 alors
+	Si i=1 alors
+		Ecrire(S1)
+	Sinon
+		Si i=2
+			Ecrire(S2)
+		Sinon
+			Sn = S1*S2
+			Ecrire(Sn)
+			P*=Sn
+			S1, S2 = S2, Sn
+		Finsi
+	Finsi
+FinPour
+Ecrire("Le produit des termes jusqua la limite :", P)
+Fin
+
+#EXERCICE 3 :
+Algorithme nombre_amis
+Variables
+a, b, sa, sb : entier
+Debut
+Ecrire("Entrez un nombre entier a :")
+Lire(a)
+Ecrire("Entrez un nombre entier b :")
+Lire(b)
+Tantque a<=1 et b<=1 alors
+	Ecrire("Entrez un nombre entier a :")
+	Lire(a)
+	Ecrire("Entrez un nombre entier b :")
+	Lire(b)
+FinTantque
+sa=0
+sb=0
+Pour i allant de 1 à a-1 alors
+	Si a%i=0 alors
+		sa+=i
+	Finsi
+FinPour
+Pour i allant de 1 à b-1 alors
+	Si b%i=0 alors
+		sb+=i
+	Finsi
+FinPour
+Si sa=b OU sb=a alors
+	Ecrire(a, "et", b, "Ce sont des nombres amis")
+Sinon
+	Ecrire(a, "et", b, "Ce sont pas des nombres amis")
+##################################################################################"
+METHODE 2:
+Algorithme nombres_amis
+Variables
+nb1, nb2, i, j, sa, sb : entier
+Debut
+Ecrire("Entrez deux nombres entiers :")
+Lire(nb1,nb2)
+Tantque nb1<=0 OU nb2<=0 alors
+	Ecrire("Entrez deux nombres entiers :")
+	Lire(nb1,nb2)
+FinTantque
+i<-1
+sa<-0
+Tantque i<>nb1 alors
+	Si nb1%i=0 alors
+		sa<-sa+i
+		i<-i+1
+FinTantque
+i<-1
+sb<-0
+Tantque j<>nb1 alors
+	Si nb1%i=0 alors
+		ssb<-a+i
+		i<-i+1
+FinTantque
+Si sa=nb2 OU sb=nb1 alors
+	Ecrire(nb1,"et",nb2,"sont amis")
+Sinon
+	Ecrire(nb1,"et",nb2,"ne sont pas amis")
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

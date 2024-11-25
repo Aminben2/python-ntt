@@ -1,0 +1,236 @@
+######################################################################## EXERCICES DES FONCTIONS ###########################################################################################
+
+EXERCICE 1 :
+Algorithme Somme
+Variables x,y,s : reel
+	Fonction somme (a, b : reel) : reel
+	Variables S : reel
+	Debut
+	S<- a+b
+	Retourne S
+	FinFonction
+Début
+	Ecrire("Entrez deux nombres :")
+	Lire(x,y)
+	Ecrire("la somme est", somme(x,y))
+Fin
+
+EXERCICE 2 :
+Algorithme nbre_max
+Variables
+x,y : reel
+	Fonction Max (a,b : reel) : reel
+	Debut
+	Si b<= a alors
+		Retourne a
+	Sinon
+		Retourne b
+	FinFonction
+Début
+	Ecrire("Entrez le premier nombre :")
+	Lire(x)
+	Ecrire("Entrez le deuxième nombre :")
+	Lire(y)
+	max<-max(x,y)
+	Ecrire("Le max de", a, b, "max")
+Fin
+
+EXERCICE 3 :
+Algorithme nbr_paire
+Variables 
+x : entier
+paire, V : booléenne
+	Fonction paire(a : entier) : booléenne
+	Debut
+	Si a%2=0 alors
+		retourne VRAI
+	Sinon	
+		retourne FAUX
+	FinFonction
+Debut
+	Ecrire("Entrez un nombre :")
+	Lire(x)
+	Si paire(x) = VRAI alors
+		Ecrire(x, "Est paire")
+	Sinon
+		Ecrire(x, "N'est pas paire")
+Fin
+
+EXERCICE 4 :
+Algorithme nbre_premier
+Variables
+nb : entier
+premier, V : booléenne
+	Fonction p(a : entier) : booléenne
+	Variables i : entier
+	Debut
+	Si nb= 0 OU nb=1 alors
+		retourne FAUX
+	Sinon
+		i<-2
+		Si i<a ET a%i<>0 alors
+			retourne VRAI
+		Sinon 
+			retourne FAUX
+		Finsi
+	Finsi
+	FinFonction
+Debut
+	Ecrire("Entrez un nombre :")
+	Lire(nb)
+	Ecrire(p(nb))
+Fin
+
+EXERCICE 5 :
+Algorithme Factoriel
+Variables
+nb, f : entier
+	Fonction factoriel(a : entier) : entier
+	Variables f : entier
+	Debut
+	Si a=0 alors
+		Retourne 1
+	Sinon
+		f<-1
+		Pour i allant de 1 à nb alors
+			f<-f*i
+		FinPour
+		Retourne f
+	Finsi
+	FinFonction
+Debut
+	Ecrire("Entrez un nombre :")
+	Lire (nb)
+	f<-f(nb)
+	Ecrire("Le factoriel de", nb, "est :", f)
+Fin
+
+EXERCICE 6 :
+Algorithme moyenne
+Variables
+nb1, nb2, nb3 : reel
+	Fonction moyenne (a,b,c : reel) : reel
+	Variables m : reel
+	Debut
+	m<-(a+b+c)/3
+	Retourne m
+	FinFonction
+Debut
+	Ecrire("Entrez trois nombres :")
+	Lire(nb1,nb2,nb3)
+	Ecrire("La moyenne des nombres est :", m(nb1,nb2,nb3))
+Fin
+
+EXERCICE 7 :
+Algorithme N_chiffres
+Variables 
+nb, l : entier
+	Fonction Nchiffres (a : entier) : entier
+	Variables l : entier
+	Debut
+	l<-0
+	Repeter
+		a<-a/10
+		l<-l+1
+	jusqua x<1
+	Retourne l
+	FinFonction
+Debut
+	Ecrire("Entrez un nombre entier :")
+	Lire(nb)
+	l<-l(nb)
+	Ecrire("Le nombre", nb, "a", l, "chiffres")
+Fin
+
+EXERCICE 8 :
+Algorithme calcule
+Variables
+nb1, nb2 : reel
+c : caractère
+	Fonction calcule (x,y : reel) : reel
+	Variables d,s,m,a : reel
+		  opérateur : caractère
+	Debut
+	Si opérateur="*" alors
+		m<-x*y
+		Retourne m
+	Sinon
+		Si opérateur="-" alors
+			s<-x-y
+			Retourne s
+		Sinon
+			Si opérateur="+" alors
+				a<-x+y
+				Retourne a
+			Sinon
+				Si y=0 alors
+					Retourne null
+				Sinon
+					d<-x/y
+					Retourne d
+				Finsi
+			Finsi
+		Finsi
+	Finsi
+	FinFonction
+Debut
+	Ecrire("Entrez deux nombres :")
+	Lire(nb1,nb2)
+	Ecrire("Entrez un caractère (+ = addition , - = soustraction, * = multiplication et / = division)")
+	Lire(c)
+	Si c=- alors
+		Ecrire("La soustraction des nombres", nb1, "et", nb2, "est :", s(nb1,nb2))
+	Sinon
+
+		Si c=*alors
+			Ecrire("La multiplication des nombres", nb1, "et", nb2, "est :", m(nb1,nb2))
+		Sinon
+			Si c=+ alors
+				Ecrire("L'addition des nombres", nb1, "et", nb2, "est :", a(nb1,nb2))
+			Sinon
+				Ecrire("La division des nombres", nb1, "et", nb2, "est :", d(nb1,nb2))
+			Finsi
+		Finsi
+	Finsi
+Fin
+				
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

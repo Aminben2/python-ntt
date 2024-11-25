@@ -1,0 +1,24 @@
+############################################################# MANIPULATION DES CHAINES ###################################################################"###############################
+Les chaines des caractères sont immutables : on ne peut pas modifier les caractères de la chaine.
+La chaine est considérée comme un tableau des caractères
+c="Ahmed" ["A"|"h"|"m"|"e"|"d"]
+
+print(c[3]) #chaine [indice] = caractère
+
+#Les fonctions pour manipuler les chaines
+#LONGUEUR(chaine): entier = retourne le nombre des caractères
+#LONGUEUR(c) = 5
+Pour i allant de 0 à LONGUEUR(c)-1
+	Ecrire(c[i])
+FinPour
+#SSCHAINE(chaine,idebut,nbrcarac): chaine => retourne un extrait/une tranche de la chaine
+SSCHAINE("Hello world",3,4)=>"lo w"
+#RANG(chaine,sous-chaine,position): entier => recherche dans la chaine la sous-chaine passee en paramètre et retourne la position
+ de sa première occurance s'il existe sinon elle retourne -1
+"Exemple"
+#RANG("Hello World","wor",3) => -1
+#MINISCULE(chaine):chaine / MAJUSCULE(chaine):chaine => retourne une chaine soit en miniscule/majusculeen se basant sur la chaine en paramètre.
+#CODE("caractère):entier => retourne le code asccii du caractère en paramètre
+#CODE('R') => 82 en python (ord)
+#CAR(code ascii) : caractère => retourne le caractère que son code ascii et en paramètre 
+CAR(82) => 'R' en python (chr)
